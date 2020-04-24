@@ -1,12 +1,13 @@
 
-// To prompt the user to input a password-length number between 8 and 128.
+// To prompt the user to input ONLY an integral number between 8 and 128.
 var userLength = prompt ("Choose your password length between 8 and 128.");
 
-while (userLength <8 || userLength >128){
-  alert ("Hey! You need to enter a value between 8 and 128!");
+while (Number.isInteger(Number(userLength)) === false || userLength < 8 || userLength > 128){
+  alert ("Hey! You need to enter an integral number between 8 and 128!");
   userLength = prompt ("Choose your password length between 8 and 128.");
-}
+};
 
+console.log("Password Length is integral: " + Number.isInteger(Number(userLength)));
 console.log("Password Length: " + userLength);
 
 
