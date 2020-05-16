@@ -1,4 +1,7 @@
 # GitHomework-03-Password
+
+Deployed website: https://tingtingctt.github.io/Random-Password-Generator/.
+
 User Guide:
 
 When the webpage is refreshed, the user will be prompted to choose their criteria to generate a password.
